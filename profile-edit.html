@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="profedit.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - SoundVerse</title>
+</head>
+
+<body>
+
+    <h2>Edit Profile</h2>
+
+    <form action="/save-profile" method="POST" onsubmit="redirectToHome(event)">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter new username" required>
+        <br>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Write something about yourself..."></textarea>
+        <br>
+        
+        <label for="music">Profile Music</label>
+        <select id="music" name="music">
+            <option value="selfless">Selfless - The Strokes</option>
+            <option value="other">Other Song</option>
+        </select>
+        <br>
+        
+        <label for="profile-pic">Profile Picture</label>
+        <input type="file" id="profile-pic" name="profile-pic">
+        <br>
+        
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <script>
+        function redirectToHome(event) {
+            event.preventDefault();
+            alert('Profile saved successfully!');
+            window.location.href = 'home.html';
+        }
+    </script>
+
+</body>
+</html>

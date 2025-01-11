@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Spotify-inspired dark background */
+    color: #ffffff;
+}
+
+h1, h4 {
+    color: #1db954; /* Spotify green */
+    text-align: center;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #282828; /* Slightly lighter dark tone */
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: #b3b3b3;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #1db954;
+    color: #121212;
+}
+
+/* Content Area Styles */
+.content {
+    margin-left: 270px; /* Adjust for sidebar width */
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #282828;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background-color: #1db954;
+    color: #121212;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+tr:nth-child(even) {
+    background-color: #1e1e1e; /* Alternate row color */
+}
+
+tr:hover {
+    background-color: #333;
+    color: #1db954;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #1db954;
+    color: #121212;
+    margin-right: 15px; /* Added margin to create space between buttons */
+}
+
+.edit-btn:hover {
+    background-color: #14803c;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+    margin-left: 15px; /* Added margin to create space between buttons */
+}
+
+.delete-btn:hover {
+    background-color: #9a2424;
+}
+
+.add-btn {
+    background-color: #1db954;
+    color: #121212;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.add-btn:hover {
+    background-color: #14803c;
+}
+
+.back-btn {
+    background-color: #404040;
+    color: #ffffff;
+}
+
+.back-btn:hover {
+    background-color: #333;
+}
+
+/* Table Wrapping */
+.song-table, .user-table, .table {
+    border-radius: 5px;
+    overflow: hidden;
+}
